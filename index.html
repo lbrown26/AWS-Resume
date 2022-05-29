@@ -14,9 +14,12 @@ h1 {background-color: Navy;}
     {margin-right: 40px}
 img {background-origin: inherit;}
     {background-color: inherit;}
-div {background-color: Navy;}
-    {size: inherit;}
-    {height: 100px;}
+div {
+   background-color: white;
+    size: inherit;
+    height: 100px;
+    background: linear-gradient(to right, #000000, #4e00a9);
+  }
 img.rounded {
   object-fit: cover;
   border-radius: 50%;
@@ -24,8 +27,31 @@ img.rounded {
   width: 100px;
   padding: 0px;
   position: absolute;
-  left: 40px;
   top: 0px;
+}
+img.contact{
+  object-fit: cover;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin-right:  5px;
+  position: absolute;
+  top: 25px;
+  align: right;
+  float: right;
+}
+img.outline{
+  object-fit: scale-down;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin-right: 5px;
+  position: absolute;
+  border-style:solid;
+  border-color: black;
+  top: 25px;
+  align: right;
+  float: right;
 }
 p.main {
   font-size: 15px;
@@ -65,7 +91,7 @@ strong{
  background-repeat: no-repeat;
 	background-size: 10px;
   background-origin: content-box;
-  background-position: 300px 50%;
+  background-position: 25%;
 }
 
 body
@@ -75,9 +101,12 @@ body
 </style>
 </head>
 <body>
-  <div style="text-align: center; height: 100px">
+  <div style="text-align: center; height: 100px" class = "rounded";>
         <h1 style="color: white; text-align: center;font-size: 80px; margin: 0; padding: 0;"> Logan Brown
-    <img align="left" src="IMG_6759.JPG" style=" height:100px;  z-index: 1; float: left" class="rounded"> </img>
+     <img align="left" src="IMG_6134.JPG" style="   z-index: 1; float: left; left: 40px;" class="rounded"> </img>
+    <a class = "mailto"; tabindex="-1"; href="mailto: lbrown26@iastate.edu";> <img  src = "resume images\Email.png";  class = "contact"; style = " right: 12.5%;"> </img> </a>
+    <a class = "tel"; tabindex="-1"; cursor = 'text'; href="tel: 515 782 3188";> <img src = "resume images\Phone.png"; class = "contact"; style = "right: 7.5%;"> </img> </a>
+    <a tabindex="-1"; href="https://www.linkedin.com/in/logan-brown-a74ba7148/" target="_blank";> <img src = "resume images\imlinked.png"; class = "contact"; style = "right: 2.5%";> </img> </a>
 </h1>
 
 </div>
