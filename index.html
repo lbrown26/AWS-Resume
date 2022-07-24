@@ -72,26 +72,29 @@
 
 
 
-h1 {background-color: inherit;}
-    {font-size: 120px;}
-    {text-align: center;}
-    {color: white;}
-    {margin-right: 40px}
-img {background-origin: inherit;}
-    {background-color: inherit;}
-div {
-   background-color: white;
-    size: inherit;
+h1 {
+  background-color: inherit;
+    font-size: 120px;
+    text-align: center;
+    color: white;
+    margin-right: 40px
+  }
+img {
+  background-origin: inherit;
+    background-color: inherit;
+  }
+
+.header{
     height: 100px;
     background: linear-gradient(to right, #000000, #4e00a9);
-  }
-  .footer {
+}
+.footer {
   position:static;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: red;
-  color: white;
+  height: 100px;
+    background: linear-gradient(to right, #000000, #4e00a9);
   text-align: center;
 }
 img.rounded {
@@ -111,7 +114,6 @@ img.contact{
   margin-right:  5px;
   position: absolute;
   top: 25px;
-  align: right;
   float: right;
 }
 img.outline{
@@ -124,7 +126,6 @@ img.outline{
   border-style:solid;
   border-color: black;
   top: 25px;
-  align: right;
   float: right;
 }
 p.main {
@@ -136,17 +137,16 @@ p.main {
   margin-right: 40px;
 }
 p.subtext{
-  text-align: center;
    font-size: 15px;
     color: #3A3535
 
 }
 
-h3 {
-text-align: center;
+span.head3 {
+  font-size: larger;
+  color: goldenrod;
 }
 h2{
-  text-align: center;
   font-size: 40px;
   font-weight: 15px;
 }
@@ -168,17 +168,21 @@ strong{
   background-position: 25%;
 }
 
-body
-    {margin: 0;}
-    {padding: 0;}
-
+body{
+    margin: 0;
+    padding: 0;
+}
+p.summary{
+  font-size: medium;
+  color: darkviolet;
+}
 </style>
 <head>
   <script type="text/javascript" src="JavaScript.js"></script>
 
 </head>
 <body>
-  <div style="text-align: center; height: 100px" class = "rounded";>
+  <div style="text-align: center; height: 100px" class = "header";>
         <h1 style="color: white; text-align: center;font-size: 80px; margin: 0; padding: 0;"> Logan Brown
      <img align="left" src="IMG_6134.JPG" style="   z-index: 1; float: left; left: 40px;" class="rounded"> </img>
     <a class = "mailto"; tabindex="-1"; href="mailto: lbrown26@iastate.edu";> <img  src = "resume images\Email.png";  class = "contact"; style = " right: 12.5%;"> </img> </a>
@@ -189,35 +193,95 @@ body
 </div>
 
 </p>
+
+
+<div class = "container">
+  <div class="row">
+  <div class = "col-md-1"></div>
+  <div class="col-md-9">
+<h2>Education</h2>
+
+  <!-- begin new layout !-->
+<span class="head3">
+  <!--- education -->
+  Bachelor of Science - Computer Science and Applied Mathematics
+  </span>
+  <p class="subtext">
+  Iowa State University, Ames Iowa
+  <br>
+  Expected Graduation May 2024
+  </p>
+     <span class="head3">
+      Associate of Science
+  </span>
+  <p class="subtext">
+    Des Moines Area Community College, Ankeny, Iowa
+  <br>
+  May 2021
+  </p>
+
+<!--- work -->
+  <h2>Work Experience
+  </h2>
+  <p class="summary">
+    <span> <b>Iowa State University</b>  Assistant Business Analyst </span> <br> 
+    05/2022 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/> </svg> Present
+<br>
+    <span><b>Danfoss</b>   Production Operation Technichian <br> </span>
+    11/2021 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/> </svg> 3/22
+<br>
+    <span> <b>Perishable Distributors of Iowa</b>  Warehouse Part-Time </span> <br>
+    07/2020 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/> </svg> 8/21
+<br>
+  <span> <b>Menards</b>  Order Pick Up and Delivery Assistant </span> <br> 
+  03/2020 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/> </svg> 7/20
+<br>
+  <span> <b>Pie Five</b>  Team Member </span> <br>
+  05/2019 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/> </svg> 3/20
+<br>
+  <span> <b>The Original Pancake House</b>  Dishwasher / Busboy</span> <br>
+  05/2016 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/> </svg> 3/20
+<br>
+
+</p>
+
+
+
+  </div>
+  <!-- next section-->
+  <div class = "col-md-1">as</div>
+  </div>
+</div>
+
+
+
+
 <h4 style = "font-size: 40px; text-align: center; margin-bottom: 0px">Education
 </h4>
 <p class="main">
 
 
-<ul>
-  <li>
-
+<h3>
 Bachelor of Science - Computer Science and Applied Mathematics
-
-
-</li>
-</ul>
+</h3>
 <p class="subtext">
 Iowa State University, Ames Iowa
 <br>
 Expected Graduation May 2024
-<ul style="margin-top: 20px">
 </p>
-  <li> <span>
+   <span>
+    <h3>
     Associate of Science
+  </h3>
 </span>
-</li>
-</ul>
 <p class="subtext">
   Des Moines Area Community College, Ankeny, Iowa
 <br>
 May 2021
 </p>
+
+
+
 <h4 style = "font-size: 40px; text-align: center">Work Experience
 </h4>
 <p style="text-align: center; font-size: 15px; line-height: 150%; margin-top: -30px; margin-bottom: -20px">
@@ -233,6 +297,9 @@ Pie Five -- Team Member (5/19 -> 3/20)
 <br>
 The Original Pancake House -- Dishwasher (5/16 -> 3/20)
 </p>
+
+
+
 <h4 style = "font-size: 40px; text-align: center">Skills</h4>
 <p style="text-align: center; font-size: 15px; line-height: 150%; margin-top: -30px; margin-bottom:10px ">
 <strong>JAVA</strong> - Proficient from school and self learning
