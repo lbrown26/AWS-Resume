@@ -148,5 +148,11 @@ body{
 }
 p.summary{
   font-size: medium;
+  color: black;
+}
+p.summary>b{
   color: darkviolet;
+}
+p.summary>span>b{
+  color:darkviolet;
 }
