@@ -2,15 +2,33 @@
 <html lang="en">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title> Logan Brown </title>
+<head>
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="MDB5-STANDARD-UI-KIT-Free-4.3.0/css/*">
+<link rel="stylesheet" href="MDB5-STANDARD-UI-KIT-Free-4.3.0/css/mdb.dark.min.css">
+<link rel="stylesheet" href="MDB5-STANDARD-UI-KIT-Free-4.3.0/css/mdb.min.css">
+<link rel="stylesheet" href="MDB5-STANDARD-UI-KIT-Free-4.3.0/css/mdb.dark.min.css.map">
+<link rel="stylesheet" href="MDB5-STANDARD-UI-KIT-Free-4.3.0/css/mdb.dark.rtl.min.css">
+<link rel="stylesheet" href="MDB5-STANDARD-UI-KIT-Free-4.3.0/css/mdb.dark.rtl.min.css.map">
+<link rel="stylesheet" href="MDB5-STANDARD-UI-KIT-Free-4.3.0/css/mdb.min.css.map">
+<link rel="stylesheet" href="MDB5-STANDARD-UI-KIT-Free-4.3.0/css/mdb.rtl.min.css">
+<link rel="stylesheet" href="MDB5-STANDARD-UI-KIT-Free-4.3.0/css/mdb.rtl.min.css.map">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+
+</head>
+
+
+
 <style>
+  @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+  @import url("MDB5-STANDARD-UI-KIT-Free-4.3.0/css/*");
   @import url("mainStyle.css");
 </style>
-
 
 
 
@@ -123,8 +141,23 @@
   <br>
     <b>Multipurpose Software</b>
     Excel, AWS, git, Workday
+  <br>
   </p>
+<!-- About Me -->
+<h2> About Me </h2>
+  <p class = "summary"> 
+    I am a junior at Iowa State, majoring in computer science and applied mathematics. I have spent the past few years learning so much- more about myself, different fields, and 
+    what I want after college. I've been exploring a wide breadth of different languages and technologies, figuring out how they all work and which I can do more with. I am always open to talk about philosophy, nature, and of course new work oppurtunities- just send an email.
+  </p>
+<br>
 
+
+<h2>What I've Been Doing</h2>
+  <p class = "summary">
+    As I mentioned before, I am great at keeping myself busy. Since I would prefer to not turn this into a blog, I'll keep it short. Foremost, I have been reading a lot. I recently finishes 'refactoring', and am now reading 'Thus Spoke Zarathustra' and 'The Institue'. 
+    I am breaking into android development, which is quite a task. I've been making some simple apps to familiarize myself with Kotlin, Jetpack, and app development before I break ground on my main idea.
+    There's more, though I'd rather leave the rest to talk about in another setting.
+  </p>
   </div>
   <!-- next section-->
   <div class = "col-md-1"></div>
@@ -133,20 +166,27 @@
 
 
 
-<h3 style="font-size: 25px; font-weight: 15px; position: relative;color: black; text-align: center"> More About Myself </h3>
-<p class = "main">   I am a junior at Iowa State, majoring in computer science and applied mathematics. I have spent the past few years learning so much- more about myself, different fields, and 
-  what I want after college. I've been exploring a wide breadth of different languages and technologies, figuring out how they all work and which I can do more with.
-  
-</p>
-<h6 style="font-size: 25px; font-style: times; text-align: center"> About My Website </h6>
-<p class="main">
-  I built this website to push myself to learn more front end development that I was lacking, along with utilizing some more AWS services. This project is nowhere near done- it'll be continously updated whenever I have time between work, school and my personal life. I have set up a CodePipeline pushing updates from GitHub and a lambda function to automatically invalidate any previous cached versions. After cleaning up my CSS to make it look more 'professional', I will add a SES interface. Not impressed? Come back in a few months and maybe you'll change your mind :)
-</p>
+<footer class =  "bg-dark text-center text-white">
+  <div class = "container p-4 pb-2">
+      <section class="mb-4">
+        <a class = "btn btn-outline-light btn-floating m-1" role = "button" href="https://www.linkedin.com/in/logan-brown-a74ba7148/">
+          <i class = "fab fa-linkedin-in"></i>
+        </a>
+        <a class = "btn btn-outline-light btn-floating m-1" role = "button" href="tel: 515 782 3188";>
+          <i class="fas fa-phone"></i>
+        </a>
+        <a class = "btn btn-outline-light btn-floating m-1" role = "button"  href="mailto: lbrown26@iastate.edu">
+          <i class="fas fa-envelope-open-text"></i>
+        </a>
+      </section>
+  </div>
+</footer>
+
 
 
 <footer class="text-center text-white footer">
   <!-- Grid container -->
-  <div class="container p-4 pb-0">
+  <div class="container p-4 pb-2">
     <!-- Section: Social media -->
     <section class="mb-4">
       <!-- Phone -->
@@ -155,7 +195,7 @@
 
       <!-- E-Mail -->
       <a class="btn btn-outline-light btn-floating m-1" href="mailto: lbrown26@iastate.edu"; role="button"
-        ><i class="far fa-envelope"></i>
+        ><i class="fas fa-envelope-open-text"></i>
       </a>
 
       <!-- Instagram -->
@@ -195,6 +235,8 @@
 </body>
 <script src="jquery-3.6.0.js"></script>
 <script src="bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/modules/lightbox.min.js"></script>
+
 
 
   </html>
