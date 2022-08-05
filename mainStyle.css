@@ -1,7 +1,7 @@
 .masthead {
   height: 100vh;
   min-height: 500px;
-  background-image:  url('/imgs/Mast-Pic.JPG');
+  background-image:  url('Mast-Pic.JPG');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
